@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Unica+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+
+
+
 /*Estilos generales*/
 * {
   margin: 0;
@@ -10,6 +14,7 @@
 html {
   font-size: 100%;
   justify-content: center;
+  background-color: #d0b3e1;
 }
 
 html,
@@ -19,6 +24,7 @@ body {
   text-align: center;
   line-height: 1.5;
   justify-content: center;
+  background-color: #d0b3e1;
 }
 
 body {
@@ -29,55 +35,84 @@ body {
   line-height: 1.5;
   background-color: #d0b3e1;
   position: relative;
-  
+
 }
+
 h1 {
   font-family: 'Unica One', cursive;
-  font-size: 3em;
+  font-size: 3.5em;
   padding: 10px;
+  background-color: #d0b3e1;
 }
 
 h2 {
   font-family: 'Unica One', cursive;
-  font-size: 2.3rem;
+  font-size: 2.5rem;
+  background-color: #d0b3e1;
+
+}
+
+.somos {
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 h3 {
   font-family: 'Unica One', cursive;
-  font-size: 1.8em;
-  color: black;
+  font-size: 2em;
+  background-color: #d0b3e1;
+  padding: 10px;
+}
+
+p {
+  font-size: 1.2em;
+  font-family: 'Unica One', cursive;
+}
+
+header {
+  background-color: #d0b3e1;
+}
+
+main {
+  background-color: #d0b3e1;
 }
 
 /*Estilos menu*/
-nav ul {
-  list-style-type: none;
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 30px;
-  background-color: #e1fd8e;
-}
-nav ul li {
-  margin: 5px;
-  padding: 1em;
-}
-nav ul li a {
-  text-decoration: none;
-}
 .menu {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 0.9em;
   letter-spacing: 0.45em;
-  color: black;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 30px;
+  position: fixed;
+  background-color: #e1fd8e;
+  list-style-type: none;
+  font-family: 'Unica One', cursive;
+}
+
+nav ul li {
+  margin: 5px;
+  padding: 1em;
+}
+
+nav ul li a {
+  text-decoration: none;
+}
+
+li a {
+  color: #141619;
+  text-decoration: underline;
 }
 
 .logoLila {
   margin-top: 30px;
   display: flex;
   justify-content: center;
+  background-color: #d0b3e1;
 }
 
 /*Estilos footer*/
@@ -89,17 +124,19 @@ nav ul li a {
   justify-content: center;
   align-items: center;
 }
+
 .footer p {
- color: black;
- font-size: 25px; 
+  color: black;
+  font-size: 25px;
 }
 
-footer ul{
+footer ul {
   display: flex;
   list-style: none;
   flex-direction: row;
   margin: 60px;
 }
+
 footer ul li {
   font-size: 1em;
   color: black;
@@ -112,37 +149,45 @@ footer ul li {
 .trabajosPortada {
   display: flex;
   flex-direction: column;
-  
+  background-color: #d0b3e1;
 }
+
 .aryaTrabajos {
   padding: 15px;
   display: flex;
   justify-content: flex-end;
-  margin-right: 350px;}
+  margin-right: 350px;
+}
+
 .laAgencia {
   display: flex;
   flex-direction: column;
 }
+
 .aryaAgencia {
   padding: 15px;
   display: flex;
   justify-content: flex-start;
   margin-left: 350px;
 }
+
 .serviciosPortada {
   display: flex;
   flex-direction: column;
 }
+
 .aryaServicios {
   padding: 15px;
   display: flex;
   justify-content: flex-end;
   margin-right: 350px;
 }
+
 .contactoPortada {
   display: flex;
   flex-direction: column;
 }
+
 .aryaContacto {
   padding: 15px;
   display: flex;
@@ -157,20 +202,24 @@ footer ul li {
   margin-top: 30px;
   padding-bottom: 30px;
 }
+
 .enlaceAtico {
   text-decoration: none;
   color: black;
 }
+
 /*Estilos pestaña agencia*/
 .flexServicios {
   padding-bottom: 30px;
 }
+
 .flexAgencia {
   display: flex;
   flex-direction: column;
   justify-content: center;
   padding-bottom: 150px;
 }
+
 /*Estilos pestaña servicios*/
 .servRedes {
   margin-top: 30px;
@@ -183,6 +232,7 @@ footer ul li {
   display: flex;
   justify-content: center;
 }
+
 .servDesarrollo {
   margin-top: 40px;
   display: flex;
@@ -195,76 +245,97 @@ form {
   margin-left: 450px;
   margin-right: 450px;
   margin-top: 15px;
+
 }
 
 .agradecerForm {
   font-family: 'Unica One', cursive;
   font-size: 1.9em;
   margin-top: 30px;
-padding-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-@media only screen and (max-width:760px){
-/*Mobile menu de navegación*/
-.menu {
-  display: flex;
-  flex-direction: column;
-  background-color: #e1fd8e;
-  position:static;
-  width: 100%;
-  height: auto;
-}
-.logoLila {
-margin-left: 20px;
-margin-top: 20px;
-position: static;
-}
-/*Mobile body*/
+@media only screen and (max-width:760px) {
 
 
-.trabajosPortada, 
-.laAgencia,
-.serviciosPortada,
-.contactoPortada {
-  flex-direction: column;
-  width: auto;
-}
-.aryaTrabajos,
-.aryaServicios, 
-.aryaAgencia,
-.aryaContacto {
-  display: flex;
-  flex-direction: column;
+  /*Mobile menu de navegación*/
+  .menu {
+    display: flex;
+    flex-direction: column;
+    position: static;
+    background-color: #e1fd8e;
+    width: 100%;
+    height: auto;
   }
- 
-/*Mobile footer*/
-.footerTexto {
-  flex-direction: column;
-  width: 100%;
-  height: 250px;
-  }
-/*Mobile pagina trabajos*/
-.imaAtico {
-  display: flex;
-  flex-direction: column;
- 
-}
 
-/*Mobile  pagina contacto */
-form {
-display: flex;
-flex-direction: column;
-flex-direction: row;
-}
-}
 
-@media only screen and (max-width:1199px)
-{
-  /*Tablet footer*/
-.footerTexto {
-  flex-direction: column;
-  width: 100%;
-  height: 350px;
+  .logoLila {
+    margin-left: 20px;
+    margin-top: 20px;
+    position: static;
   }
-}
+
+
+
+  .trabajosPortada,
+  .laAgencia,
+  .serviciosPortada,
+  .contactoPortada {
+    flex-direction: column;
+    width: auto;
+  }
+
+  .aryaTrabajos,
+  .aryaServicios,
+  .aryaAgencia,
+  .aryaContacto {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*Mobile footer*/
+  .footerTexto {
+    flex-direction: column;
+    width: 100%;
+    height: 250px;
+  }
+
+  /*Mobile pagina trabajos*/
+  .imaAtico {
+
+
+    display: flex;
+    flex-direction: column;
+
+  }
+
+  /*Mobile  pagina contacto */
   
+
+  form {
+  margin: auto;
+  padding: 10px;
+  box-sizing: border-box;
+    }
+
+
+}
+
+@media only screen and (max-width:1199px) {
+
+  /*Tablet footer*/
+  .footerTexto {
+    flex-direction: column;
+    width: 100%;
+    height: 350px;
+  }
+
+  /*Tablet  pagina contacto */
+  form {
+
+    display: flex;
+    flex-direction: column;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+}

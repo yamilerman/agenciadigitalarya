@@ -43,7 +43,7 @@ h1 {
   font-size: 3.5em;
   padding: 10px;
   background-color: #d0b3e1;
-}
+   }
 
 h2 {
   font-family: 'Unica One', cursive;
@@ -61,10 +61,13 @@ h3 {
   font-family: 'Unica One', cursive;
   font-size: 2em;
   background-color: #d0b3e1;
-  margin-top: 0;
+    margin-top: 0;
   margin-bottom: 0;
   padding: 30px;
+  
 }
+
+
 
 p {
   font-size: 1.2em;
@@ -94,21 +97,25 @@ main {
   background-color: #e1fd8e;
   list-style-type: none;
   font-family: 'Unica One', cursive;
+  color: black;
 }
 
 nav ul li {
   margin: 5px;
   padding: 1em;
+  color: black;
 }
 
 nav ul li a {
   text-decoration: none;
+  color: black;
 }
 
 li a {
   color: #141619;
   text-decoration: underline;
 }
+
 
 .logoLila {
   margin-top: 30px;
@@ -160,6 +167,11 @@ footer ul li {
   display: flex;
   justify-content: flex-end;
   margin-right: 350px;
+  transition: 1s ease-in-out;
+}
+
+.aryaTrabajos :hover {
+  transform: translateX(50px);
 }
 
 .laAgencia {
@@ -172,6 +184,11 @@ footer ul li {
   display: flex;
   justify-content: flex-start;
   margin-left: 350px;
+  transition: 1s ease-in-out;
+}
+
+.aryaAgencia :hover {
+  transform: translateX(-50px);
 }
 
 .serviciosPortada {
@@ -184,6 +201,11 @@ footer ul li {
   display: flex;
   justify-content: flex-end;
   margin-right: 350px;
+  transition: 1s ease-in-out;
+}
+
+.aryaServicios :hover {
+  transform: translateX(50px);
 }
 
 .contactoPortada {
@@ -196,14 +218,35 @@ footer ul li {
   display: flex;
   justify-content: flex-start;
   margin-left: 350px;
+  transition: 1s ease-in-out;
+}
+
+.aryaContacto :hover {
+  transform: translateX(-50px);
 }
 
 /*Estilos pestaña trabajos*/
-.carousel {margin-bottom: 30px;
-  overflow-y:hidden;
- 
+.carousel {
+  display: flex;
+  margin-bottom: 30px;
+  margin-left: 100px;
+  width: 1200px;
+  height: 500px;
+  animation-name: un_efecto;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-duration: 5s;
+  animation-delay: 1s;
 }
 
+@keyframes un_efecto {
+  0% {width: 1200px }
+  10% {width: 1250px}
+  25% {width:1200px}
+  50% {width: 1250px}
+  75% {width: 1200px}
+  100% {width:1250px}
+}
 .enlaceAtico {
   text-decoration: none;
   color: black;
@@ -298,8 +341,9 @@ form {
   /*Mobile pagina trabajos*/
   .imaAtico {
     display: flex;
-    flex-direction: column;  }
- 
+    flex-direction: column;
+  }
+
 }
 
 @media only screen and (max-width:1199px) {
@@ -309,5 +353,5 @@ form {
     flex-direction: column;
     width: 100%;
     height: 350px;
-  } 
+  }
 }
